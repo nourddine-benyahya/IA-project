@@ -17,20 +17,20 @@ function VoiceToText() {
     handleListen()
   }, [isListening])
 
+  //mic on / mic off
   const handleListen = () => {
 
     //open mice if treu and turn it off if if false
     if (isListening) {
       mic.start()
     } else {
+        console.log(note)
       mic.stop()
     }
-
     //when mic opened show message
     mic.onstart = () => {
       console.log('Mics on')
     }
-
     //transcript Voice
     mic.onresult = event => {
       const transcript = Array.from(event.results)
@@ -43,7 +43,10 @@ function VoiceToText() {
         console.log(event.error)
       }
     }
+  }
 
+  const handelSearch = (e)=>{
+    console.log("done " + note)
   }
 
 
@@ -57,6 +60,7 @@ function VoiceToText() {
           <button onClick={() => setIsListening(prevState => !prevState)}>
             Start/Stop
           </button>
+          <button onClick={handelSearch} > search </button>
 
           <p>{note}</p>
 
