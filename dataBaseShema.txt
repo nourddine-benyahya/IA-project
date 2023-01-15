@@ -1,0 +1,44 @@
+admin collection
+{
+	username
+	email
+	password
+	key
+}
+
+
+
+
+user collection
+{
+	username
+	firstName
+	lastName
+	age
+	image
+	email
+	password
+}
+
+
+
+historic collection
+{
+	username
+	date
+	questions
+	answer 
+}
+
+exampl
+
+
+{
+  "username":"shigaraki",
+  "firstName":"nourddine",
+  "lastName":"benyahya",
+  "age":20,
+  "image":"https://ih1.redbubble.net/image.2478773626.3550/st,small,507x507-pad,600x600,f8f8f8.jpg",
+  "email":"nourddine.benyahya02@gmail.com",
+  "password":"123456"
+}

@@ -1,0 +1,37 @@
+GET http://localhost:3000/users/allUsers
+
+###
+
+GET http://localhost:3000/history/all
+
+###
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "username": "shinigami",
+    "firstName": "nourddine",
+    "lastName": "benyahya",
+    "age":20,
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRirQSx0fat2TgnWZDhmkjmc4LRw77r2D-L-g&usqp=CAU",
+    "email": "shinigami@gmail.com",
+    "password": "123456"
+}
+
+###
+
+
+GET  http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username": "shinigami",
+    "password": "123456"
+}
+
+
+###
+
+GET http://localhost:3000/history/myHistory
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaW5pZ2FtaSIsImlhdCI6MTY3Mzc5MTEyOSwiZXhwIjoxNjczNzkxMjQ5fQ.zBoNO783m6QXITGB9pD9WlyCDlbc2mrL5x8q4EzlBI8
