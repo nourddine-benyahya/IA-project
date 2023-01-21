@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import { TextToSpeech } from '../TextToVoice/TextToVoice';
+
+import { IA } from '../AI/IA';
+
 
 const SpeechRecognition =window.SpeechRecognition || window.webkitSpeechRecognition
 const mic = new SpeechRecognition()
@@ -6,10 +10,11 @@ const mic = new SpeechRecognition()
 mic.continuous = true
 mic.interimResults = true
 mic.lang = 'en-US'
-
+TextToSpeech("")
 function VoiceToText() {
   const [isListening, setIsListening] = useState(false)
   const [note, setNote] = useState(null)
+  const [ansr, setansr] = useState(null)
 
 
   //call fun when value of islistening 
@@ -46,7 +51,14 @@ function VoiceToText() {
   }
 
   const handelSearch = (e)=>{
-    console.log("done " + note)
+
+    const fetchData = async () => {
+      const data = await IA(note);
+      TextToSpeech(data)
+      setansr(data)
+    }
+    fetchData();
+    
   }
 
 
@@ -60,9 +72,11 @@ function VoiceToText() {
           <button onClick={() => setIsListening(prevState => !prevState)}>
             Start/Stop
           </button>
-          <button onClick={handelSearch} > search </button>
+          <button value={note} onClick={handelSearch} > search </button>
 
-          <p>{note}</p>
+          <p>{note+"?"}</p>
+          <p>{ansr}</p>
+          <input value={note} onChange={(e)=>setNote(e.target.value)} ></input>
 
       </div>
     </>

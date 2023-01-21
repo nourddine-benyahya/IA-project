@@ -6,9 +6,9 @@ import VoiceToText from "./VoiceToText/VoiceToText";
 function App() {
   return (
     <div className="App">
-        {/* <AI/>
-        <VoiceToText/> */}
-        <TextToSpeech/>
+        {/* <AI/>*/}
+        <VoiceToText/> 
+
     </div>
   );
 }
