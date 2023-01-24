@@ -1,15 +1,21 @@
 import React from "react";
-import AI from "./AI/AI";
-import TextToSpeech from "./TextToVoice/TextToVoice";
-import VoiceToText from "./VoiceToText/VoiceToText";
+import Header from "./Components/Header";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home";
+import Signin from "./Components/Signin";
+
 
 function App() {
   return (
-    <div className="App">
-        {/* <AI/>*/}
-        <VoiceToText/> 
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />} >
+          <Route index element={<Home/>} />
+          <Route path='/Singin' element={<Signin />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

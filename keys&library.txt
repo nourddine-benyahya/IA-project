@@ -4,3 +4,6 @@ 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
 server :
 npm init -y
 npm i cors dotenv express mongoose nodemon jsonwebtoken
+
+frontEnd:
+npm i framer-motion

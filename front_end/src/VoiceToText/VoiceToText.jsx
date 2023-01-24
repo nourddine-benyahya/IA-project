@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { TextToSpeech } from '../TextToVoice/TextToVoice';
-
 import { IA } from '../AI/IA';
 
 
@@ -17,26 +16,21 @@ function VoiceToText() {
   const [ansr, setansr] = useState(null)
 
 
-  //call fun when value of islistening 
   useEffect(() => {
     handleListen()
   }, [isListening])
 
-  //mic on / mic off
   const handleListen = () => {
 
-    //open mice if treu and turn it off if if false
     if (isListening) {
       mic.start()
     } else {
         console.log(note)
       mic.stop()
     }
-    //when mic opened show message
     mic.onstart = () => {
       console.log('Mics on')
     }
-    //transcript Voice
     mic.onresult = event => {
       const transcript = Array.from(event.results)
         .map(result => result[0])
@@ -51,7 +45,6 @@ function VoiceToText() {
   }
 
   const handelSearch = (e)=>{
-
     const fetchData = async () => {
       const data = await IA(note);
       TextToSpeech(data)

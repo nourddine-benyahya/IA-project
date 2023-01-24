@@ -1,0 +1,67 @@
+.gridParent {
+    margin: 0.7% 0%;
+    padding: 0.5% 1% 0.4% 1% ;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10%;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.gridChild0{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 110%;
+    font-weight: inherit;
+}
+.gridChild0:hover{
+    color: #9ab3ff;
+}
+
+.gridChild1{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1%;
+    text-align: center;
+    align-items: center;
+}
+
+.gridChild2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+
+.activePath{
+
+    color: #9ab3ff;
+    text-decoration: none;
+    font-size: 110%;
+
+}
+.noActivePath{
+    color: rgb(101, 101, 101);
+    text-decoration: none;
+}
+.auth{
+    text-decoration: none;
+    color: rgb(101, 101, 101);
+}
+.auth:hover{
+    color: #9ab3ff;
+}
+
+.signup{
+    border: 1.5px solid #9ab3ff;
+    border-radius: 15px;
+    padding: 5% 0;
+    color: #9ab3ff ;
+    text-decoration: none;
+}
