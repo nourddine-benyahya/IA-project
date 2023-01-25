@@ -1,0 +1,92 @@
+.gridParent{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0.1% 1%;
+    margin: 0;
+
+
+}
+
+
+.gridChild1{
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    height: 80%;
+}
+
+.img{
+    width: 90%;
+}
+
+.bigtitle{
+    color: #9ab3ff;
+    font-size: 200%;
+    letter-spacing: 5px;
+    margin: 2.5%  0;
+
+}
+.cons{
+
+    width: 40%;
+    margin: 0 0 0 34%;
+}
+
+.cons>*{
+    margin: 0 5%;
+}
+
+.or{
+    display: grid;
+    grid-template-columns: 2fr 0.1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.hr{
+    transform: rotate(90deg);
+}
+
+.inputsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.label{
+    display: block;
+    color: rgb(101, 101, 101);
+    font-size: 100%;
+    margin: 3% 0 1% 0;
+}
+.input{
+    width: 70%;
+    font-size: 90%;
+    border-radius: 10px;
+    border:#9ab3ff solid 1px;
+    padding: 2% 5%;
+}
+
+.privacy{
+    color: rgb(101, 101, 101);
+    font-size: 85%;
+}
+
+.btn{
+    height: 70%;
+    border-radius: 20px;
+    border: #DAE4FF;
+    padding: 1.5% 25%;
+    background-color: #DAE4FF ;
+    cursor: pointer;
+    font-size: 95%;
+    color: rgb(58, 58, 58);
+}
+
+.signin{
+    font-size: 95%;
+    color: rgb(101, 101, 101) ;
+    margin: 0 0 0 40% ;
+}

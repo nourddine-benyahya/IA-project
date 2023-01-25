@@ -24,14 +24,14 @@ export default function Header() {
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Home</NavLink></motion.div>
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} >  <NavLink end to="/Services" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Services</NavLink> </motion.div>
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/Futures" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Futures</NavLink> </motion.div>
-                        <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/History" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >History</NavLink> </motion.div>
+                        <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/Chat" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Chat</NavLink> </motion.div>
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/Aboutus" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >About us</NavLink> </motion.div>
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/Contactus" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Contact us</NavLink> </motion.div>
                     </div>
 
                     <div className={styles.gridChild2} >
-                        <NavLink end to="/Singin" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Sign in</NavLink>
-                        <NavLink className={styles.signup}  >Sign up</NavLink>
+                        <NavLink end to="/Signin" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Sign in</NavLink>
+                        <NavLink end to="/Signup" className={styles.signup}  >Sign up</NavLink>
                     </div>    
                     
                 </div>   

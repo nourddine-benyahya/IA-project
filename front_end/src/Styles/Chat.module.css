@@ -1,0 +1,68 @@
+
+.menuContiner{
+    background-color: white;
+}
+.menu{
+    border-radius: 20px;
+
+
+}
+.content{
+    border-radius: 20px;
+    padding: 2%;
+}
+.IaChat{
+    display: grid;
+    grid-template-columns: 0.1fr 1.9fr;
+    grid-template-rows: 1fr;
+    margin: 1% 0;
+}
+
+.Pchat{
+    display: grid;
+    grid-template-columns: 0.1fr 1.9fr;
+    grid-template-rows: 1fr;
+    direction: rtl;
+    margin: 1% 0;
+
+}
+.chatContent{
+    width: 70%;
+    direction: ltr;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 1%;
+}
+.searchBar{
+    position: fixed;
+    bottom: 6%;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
+.input{
+    padding: 0.8% 2%;
+    width: 70%;
+    border-radius: 10px;
+    border:#9ab3ff solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+
+}
+
+input[type=text]:focus {
+    border:none;
+  }
+
+.icons{
+    margin: 0 2% 0 2%;
+    border-radius: 200%;
+    cursor: pointer;
+    display: inline;
+    position: relative;
+}
+.ico{
+
+    text-shadow: 0 0 8px #316472;
+    position: absolute;
+    top: -6px;
+}
