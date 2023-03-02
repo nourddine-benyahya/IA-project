@@ -38,7 +38,7 @@ routes.post("/register", (req, res) => {
 
 
 
-routes.get("/login", (req, res) => {
+routes.post("/login", (req, res) => {
   const { username, password } = req.body;
   if (!username || !password)
     return res.status(500).json({ message: "err de findOne" });

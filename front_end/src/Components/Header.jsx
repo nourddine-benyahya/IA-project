@@ -2,10 +2,14 @@ import React from 'react'
 import { motion } from "framer-motion"
 import styles from  '../Styles/Header.module.css'
 import { NavLink, Outlet } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { BsPersonCircle } from 'react-icons/bs';
+
 
 
 
 export default function Header() {
+    const user = useSelector(state=>state.user)
     return (
         <div>
             <motion.div 
@@ -29,10 +33,27 @@ export default function Header() {
                         <motion.div whileHover={{ y: -2.5 , scale:1.3 }} whileTap={{ y: 1.1 ,scale:1}} > <NavLink end to="/Contactus" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Contact us</NavLink> </motion.div>
                     </div>
 
+                    { !user.isHere && 
                     <div className={styles.gridChild2} >
-                        <NavLink end to="/Signin" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Sign in</NavLink>
-                        <NavLink end to="/Signup" className={styles.signup}  >Sign up</NavLink>
-                    </div>    
+                    <NavLink end to="/Signin" className={({isActive}) => isActive? styles.activePath:styles.noActivePath} >Sign in</NavLink>
+                    <NavLink end to="/Signup" className={styles.signup}  >Sign up</NavLink>
+                    </div>
+                    } 
+                    { user.isHere && 
+                    <div className={styles.gridChild2} >
+                        
+                        <motion.div
+                        whileHover={{ y: -2.5 , scale:1.3 }}
+                        whileTap={{ y: 1.1 ,scale:1}}
+                        className={styles.noActivePath} >
+                            logout
+                        </motion.div>
+                        <div>
+                        <p className={styles.username} >{user.username}</p> 
+                        <BsPersonCircle className={styles.profileIcon} size={20} />
+                        </div>
+                    </div>
+                    }
                     
                 </div>   
 

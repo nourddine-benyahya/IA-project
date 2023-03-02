@@ -3,7 +3,11 @@ import { motion } from "framer-motion"
 import styles from '../Styles/Home.module.css'
 import homeimg from '../Assist/img/HomeImg.png'
 
+
+
 export default function Home() {
+
+
   return (
     <div className={styles.gridParent} >
       <div className={styles.gridchild0} >

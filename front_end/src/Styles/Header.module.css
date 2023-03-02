@@ -49,6 +49,7 @@
 .noActivePath{
     color: rgb(101, 101, 101);
     text-decoration: none;
+    cursor: pointer;
 }
 .auth{
     text-decoration: none;
@@ -64,4 +65,16 @@
     padding: 5% 0;
     color: #9ab3ff ;
     text-decoration: none;
+}
+.profileIcon{
+
+    padding: 0 5%;
+
+}
+.username{
+    font-size: 110%;
+    display: inline;
+    align-items: flex-start;
+    text-align: start;
+    color: rgb(101, 101, 101);
 }

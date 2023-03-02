@@ -5,16 +5,16 @@ import { IA } from '../AI/IA';
 
 const SpeechRecognition =window.SpeechRecognition || window.webkitSpeechRecognition
 const mic = new SpeechRecognition()
-
 mic.continuous = true
 mic.interimResults = true
 mic.lang = 'en-US'
+
+
 TextToSpeech("")
 function VoiceToText() {
   const [isListening, setIsListening] = useState(false)
   const [note, setNote] = useState(null)
   const [ansr, setansr] = useState(null)
-
 
   useEffect(() => {
     handleListen()
