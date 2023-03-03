@@ -21,7 +21,7 @@ export async function IA(ask) {
     return response.data.choices[0].text
     */
 
-    return "Morocco is a country located in North Africa. It has a long history and culture and is known for its beautiful scenery, rich history, and diverse culture. Morocco is bordered by the Mediterranean Sea and the Atlantic Ocean, and it shares a border with Algeria, Western Sahara, and Spain. It is known for its vibrant cities, stunning beaches, and ancient medinas."
+    return "Morocco is a country located in North Africa. It has a long history and culture and is known for its beautiful scenery"
 
     
 }

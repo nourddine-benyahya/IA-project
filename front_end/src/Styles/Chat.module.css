@@ -1,6 +1,7 @@
 
 .menuContiner{
     background-color: white;
+    
 }
 .menu{
     border-radius: 20px;
@@ -27,7 +28,9 @@
 
 }
 .chatContent{
-    width: 70%;
+    width: fit-content;
+    max-width: 70%;
+    min-width: 20%;
     direction: ltr;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;

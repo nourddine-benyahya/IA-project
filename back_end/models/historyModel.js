@@ -5,7 +5,7 @@ const historySchema = new Schema({
     username: {type: String, required: true},
 	questions : {type: String, required: true},
 	answer : {type: String, required: true},
-    date_qa: Date
+    date: {type: String, required: true},
 
 }, {dbname:"speechProject" ,collection: "history"});
 

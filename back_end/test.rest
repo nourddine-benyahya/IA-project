@@ -34,4 +34,15 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/history/myHistory
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaW5pZ2FtaSIsImlhdCI6MTY3Mzc5MTEyOSwiZXhwIjoxNjczNzkxMjQ5fQ.zBoNO783m6QXITGB9pD9WlyCDlbc2mrL5x8q4EzlBI8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaW5pZ2FtaSIsImlhdCI6MTY3Nzg3MTUyMCwiZXhwIjoxNjc3ODcyMTIwfQ.tNkpPjMFO4_297AuQkXL4aM6VhTFqCt8JPwKLw1Qeeg
+
+###
+
+POST http://localhost:3000/history/addHistory
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaW5pZ2FtaSIsImlhdCI6MTY3Nzg0NjA1MSwiZXhwIjoxNjc3ODQ2MTcxfQ.cYR_yd5rlrrK0p7IRmGngYlErrGmm-wsYtoOkmonVNA
+Content-Type: application/json
+
+{
+    "questions": "hello how are youuuuu",
+    "answer": "im fine and youuuuuuu"
+}

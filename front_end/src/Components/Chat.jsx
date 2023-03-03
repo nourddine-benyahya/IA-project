@@ -1,10 +1,11 @@
 import { HistoryOutlined, WechatOutlined } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
-import { useState } from 'react';
+import {useState } from 'react';
 import { BiUserVoice } from 'react-icons/bi'
 import styles from  '../Styles/Chat.module.css'
 import History from  './History'
 import ChatContent from './ChatContent';
+
 
 
 
@@ -30,15 +31,17 @@ const items = [
   ]),
 ];
 const Chat = () => {
-
+  
+ 
   const [page,setpage]= useState('1')
 
   const [collapsed, setCollapsed] = useState(true);
   return (
     <Layout
+        
         className={styles.menuContiner}
       style={{
-        minHeight: '100vh',
+        minHeight: '85vh',
       }}
     >
       <Sider className={styles.menu} collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
@@ -53,11 +56,12 @@ const Chat = () => {
       <Layout className={styles.content}>
  
         <Content
+    
           style={{
             margin: '0 15px',
           }}
         >
-          
+
           {page=='1'?<ChatContent/>:<History/>}
           
           

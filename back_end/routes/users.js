@@ -52,7 +52,7 @@ routes.post("/login", (req, res) => {
         return res.status(500).json({ message: "err compare" })
       }
       if (reslt) {
-        jwt.sign({username:username},process.env.SECRET_KEY, {expiresIn: '120s'}, (err, token)=>{
+        jwt.sign({username:username},process.env.SECRET_KEY, {expiresIn: '600s'}, (err, token)=>{
             return res.json({ token,data })
         })
 
