@@ -1,5 +1,5 @@
 openia:
-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
+
 
 server :
 npm init -y
