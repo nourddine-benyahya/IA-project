@@ -1,10 +1,10 @@
 export async function IA(ask) {
-/*
+
     //configuration OpenAI 
     const { Configuration, OpenAIApi } = require("openai");
     //key API
     const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: '',
     });
 
     const openai = new OpenAIApi(configuration);
@@ -19,9 +19,9 @@ export async function IA(ask) {
         presence_penalty: 0,
     });
     return response.data.choices[0].text
-    */
+    /*
 
     return "Morocco is a country located in North Africa. It has a long history and culture and is known for its beautiful scenery"
 
-    
+    */
 }
