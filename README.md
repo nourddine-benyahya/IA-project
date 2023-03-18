@@ -3,25 +3,26 @@
 <br/>
 <h1>Technologies Used</h1>
 <h4>The following technologies and libraries were used in this project:</5>
-
-MongoDB Atlas for the database
-ExpressJS to link the database and frontend with API
-ReactJS for the frontend
-ant-design/icons
-emotion/styled
-mui/material
-reduxjs/toolkit
-antd
-axios
-framer-motion
-openai
-react-dom
-react-icons
-react-redux
-react-router-dom
-react-speech
-react-toastify
-uuid
+<ul>
+<li> MongoDB Atlas for the database </li>
+<li> ExpressJS to link the database and frontend with API</li>
+<li> ReactJS for the frontend</li>
+<li> ant-design/icons</li>
+<li> emotion/styled</li>
+<li> mui/material</li>
+<li> reduxjs/toolkit</li>
+<li> antd</li>
+<li> axios</li>
+<li> framer-motion</li>
+<li> openai</li>
+<li> react-dom</li>
+<li> react-icons</li>
+<li> react-redux</li>
+<li> react-router-dom</li>
+<li> react-speech</li>
+<li> react-toastify</li>
+<li> uuid</li>
+</ul>
 <h1>How to Run</h1>
 To run this project on your local machine, you need to follow these steps:
 
